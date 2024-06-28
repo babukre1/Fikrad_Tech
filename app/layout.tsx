@@ -7,9 +7,9 @@ import { AOSInit } from "@/components/Aos";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Waseem Anjum - Web Developer",
+  title: "Fikrad Technology Solutions",
   description:
-    "I am a passionate and experienced web developer, dedicated to creating visually stunning and highly functional websites. Explore my portfolio to see the power of effective design in action.",
+    "We are passionate and experienced web development agency, dedicated to creating visually stunning and highly functional websites. Explore our portfolio to see the power of effective design in action.",
 };
 
 export default function RootLayout({
@@ -20,12 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-peach-600 ${manrope.className}`}>
-        <div className="main">
-          <div className="gradient" />
-        </div>
         <NextTopLoader color="#5700FF" showSpinner={false} />
         <AOSInit />
-        <div className="relative z-10">{children}</div>
+        {children}
       </body>
     </html>
   );

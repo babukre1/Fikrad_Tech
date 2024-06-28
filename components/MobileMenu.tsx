@@ -35,7 +35,7 @@ const MobileMenu = () => {
         <nav className="flex flex-col items-center justify-center flex-1 gap-10">
           <ul className="flex items-center flex-col gap-5">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} onClick={toggleMenu}>
                 <NavLink
                   href={link.url}
                   label={link.label}
@@ -52,7 +52,7 @@ const MobileMenu = () => {
         <div className="w-full h-20 flex items-center justify-between max-width border-t border-peach">
           {socialLinks.map((link, index) => (
             <a
-            target="_blank"
+              target="_blank"
               href={link.url}
               className="text-gray-700 hover:text-purple transition-colors"
             >

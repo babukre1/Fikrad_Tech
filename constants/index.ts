@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter, linkedi } from "lucide-react";
+import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 
 export const navLinks = [
   {

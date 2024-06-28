@@ -2,70 +2,130 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @media screen and (min-width: 320px) {
-    html {
-        font-size: calc(14px + 1 * ((100vw - 320px) / 680));
-    }
+  html {
+    font-size: calc(14px + 1 * ((100vw - 320px) / 680));
+  }
+}
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+
+.main:before {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main:after {
+  content: "";
+  background-image: url("/icons/grid.svg");
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
 }
 
 @media screen and (min-width: 1040px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
 @layer base {
-    h1 {
-        @apply text-5xl font-bold;
-    }
+  :root {
+    --primary: 330 82% 47%;
+    --primary-foreground: 210 40% 98%;
+  }
+}
 
-    h2 {
-        @apply text-4xl font-bold;
-    }
+@layer base {
+  h1 {
+    @apply text-5xl font-bold;
+  }
 
-    h3 {
-        @apply text-3xl font-semibold;
-    }
+  h2 {
+    @apply text-4xl font-bold;
+  }
 
-    h4 {
-        @apply text-2xl font-semibold;
-    }
+  h3 {
+    @apply text-3xl font-semibold;
+  }
 
-    h5 {
-        @apply text-xl font-semibold;
-    }
+  h4 {
+    @apply text-2xl font-semibold;
+  }
 
-    h6 {
-        @apply font-semibold;
-    }
+  h5 {
+    @apply text-xl font-semibold;
+  }
 
+  h6 {
+    @apply font-semibold;
+  }
 }
 
 @layer utilities {
-    .max-width {
-        @apply max-w-[1920px] mx-auto px-[16px] tablet:px-[80px] desktop:px-[162px];
-    }
+  .max-width {
+    @apply max-w-[1920px] mx-auto px-[16px] tablet:px-[80px] desktop:px-[162px];
+  }
 
-    .section-padding {
-        @apply py-[30px] tablet:py-[40px] desktop:py-[60px];
-    }
+  .section-padding {
+    @apply py-[30px] tablet:py-[40px] desktop:py-[60px];
+  }
 
-    .box {
-        @apply bg-peach-400 p-8 tablet:p-12 rounded-lg
-    }
+  .box {
+    @apply bg-peach-400 p-8 tablet:p-12 rounded-lg;
+  }
 
-    .btn {
-        @apply flex items-center justify-center gap-2 rounded px-5 py-3.5 capitalize text-grey-700;
-    }
+  .btn {
+    @apply flex items-center justify-center gap-2 rounded px-5 py-3.5 capitalize text-grey-700;
+  }
 
-    .btn-primary {
-        @apply text-peach-100 bg-purple;
-    }
+  .btn-primary {
+    @apply text-peach-100 bg-primary;
+  }
 
-    input,
-    textarea {
-        @apply w-full rounded px-6 py-4 border border-peach-700 bg-peach-500 outline-none text-sm text-grey-700
-    }
+  input,
+  textarea {
+    @apply w-full rounded px-6 py-4 border border-peach-700 bg-peach-500 outline-none text-sm text-grey-700;
+  }
 }
-

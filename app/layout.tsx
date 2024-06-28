@@ -8,7 +8,8 @@ const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Waseem Anjum - Web Developer",
-  description: "I am a passionate and experienced web developer, dedicated to creating visually stunning and highly functional websites. Explore my portfolio to see the power of effective design in action.",
+  description:
+    "I am a passionate and experienced web developer, dedicated to creating visually stunning and highly functional websites. Explore my portfolio to see the power of effective design in action.",
 };
 
 export default function RootLayout({
@@ -19,9 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-peach-600 ${manrope.className}`}>
+        <div className="main">
+          <div className="gradient" />
+        </div>
         <NextTopLoader color="#5700FF" showSpinner={false} />
         <AOSInit />
-        {children}
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );

@@ -17,19 +17,18 @@ const page = () => {
         <div className="tablet:w-2/3 mt-10 tablet:mt-0">
           <div className="flex flex-col gap-3 items-center tablet:items-start max-w-2xl text-center tablet:text-left">
             <p
-              className="px-4 py-2 bg-peach-500 text-gray-600 w-max rounded"
+              className="px-4 py-2 bg-peach-500 border border-primary text-primary w-max rounded"
               data-aos="fade-down"
             >
               Hello There
             </p>
             <h1 className="text-grey" data-aos="fade-down" data-aos-delay="200">
-              John Doe welcome's you
+              Transforming Small Businesses with Innovative{" "}
+              <span className="text-primary font-[900]">Web Solutions</span>
             </h1>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dignissimos suscipit, itaque perspiciatis repellendus aliquam
-              architecto eligendi qui dolore asperiores minus doloribus nesciunt
-              quo iste fugit sint. Beatae delectus fuga culpa?
+            <p className="text-gray-600 text-lg">
+              Supporting Your Small Business with Advanced Web Solutions and
+              Digital Marketing
             </p>
           </div>
           <div className="flex gap-5 mt-10 justify-center tablet:justify-start">
@@ -46,19 +45,19 @@ const page = () => {
           <div className="bg-peach-400 w-full py-8 px-10 rounded-l-lg mt-16 flex-wrap gap-12 hidden tablet:flex">
             <div>
               <h3 className="text-grey-700">
-                5 <span className="text-purple">+</span>
+                2 <span className="text-primary">+</span>
               </h3>
               <p className="to-grey-600">Projects Completed</p>
             </div>
             <div>
               <h3 className="text-grey-700">
-                5 <span className="text-purple">+</span>
+                5 <span className="text-primary">+</span>
               </h3>
               <p className="to-grey-600">Happy customers</p>
             </div>
             <div>
               <h3 className="text-grey-700">
-                5 <span className="text-purple">+</span>
+                1.5 <span className="text-primary">+</span>
               </h3>
               <p className="to-grey-600">Years of experience</p>
             </div>
@@ -68,19 +67,19 @@ const page = () => {
           <div className="mt-16 grid grid-cols-2 gap-3 tablet:hidden">
             <div className="bg-peach-400 py-8 px-10 rounded-lg text-center col-span-2">
               <h3 className="text-grey-700">
-                5 <span className="text-purple">+</span>
+                5 <span className="text-primary">+</span>
               </h3>
               <p className="to-grey-600">Projects Completed</p>
             </div>
             <div className="bg-peach-400 py-8 px-10 rounded-lg text-center col-span-2">
               <h3 className="text-grey-700">
-                5 <span className="text-purple">+</span>
+                5 <span className="text-primary">+</span>
               </h3>
               <p className="to-grey-600">Happy customers</p>
             </div>
             <div className="bg-peach-400 py-8 px-10 rounded-lg text-center col-span-2">
               <h3 className="text-grey-700">
-                5 <span className="text-purple">+</span>
+                5 <span className="text-primary">+</span>
               </h3>
               <p className="to-grey-600">Years of experience</p>
             </div>
@@ -109,7 +108,7 @@ const page = () => {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
           {skills.map((skill, index) => (
             <div key={index} className="box flex flex-col items-center gap-5">
-              <div className="w-16 h-16 rounded bg-purple flex items-center justify-center flex-shrink-0 mb-2">
+              <div className="w-16 h-16 rounded bg-primary flex items-center justify-center flex-shrink-0 mb-2">
                 <Image
                   src={skill.icon}
                   alt={skill.name}

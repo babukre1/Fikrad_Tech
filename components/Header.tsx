@@ -4,12 +4,13 @@ import React from "react";
 import NavLink from "./NavLink";
 import { Phone } from "lucide-react";
 import MobileMenu from "./MobileMenu";
+import { Icons } from "./Icons";
 
 const Header = () => {
   return (
     <header className="flex items-center justify-between h-20 max-width border-b border-peach-100">
       <Link href={"/"}>
-        <h5 className="text-purple text-xl font-semibold">John Doe</h5>
+        <Icons.logo className="w-40" />
       </Link>
       <nav className="flex items-center gap-12 max-tablet:hidden">
         <ul className="flex items-center gap-8">

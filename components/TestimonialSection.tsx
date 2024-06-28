@@ -80,7 +80,7 @@ const SingleReview = ({ review }: { review: (typeof reviews)[0] }) => {
             <a
               href={link.url}
               key={index}
-              className="text-purple hover:scale-105 transition-transform duration-300"
+              className="text-primary hover:scale-105 transition-transform duration-300"
             >
               <link.icon strokeWidth={0} fill="currentColor" />
             </a>
@@ -94,7 +94,7 @@ const SingleReview = ({ review }: { review: (typeof reviews)[0] }) => {
               key={index}
               size={20}
               fill="currentColor"
-              className={`text-purple ${
+              className={`text-primary ${
                 index < review.stars ? "opacity-100" : "opacity-30"
               }`}
             />

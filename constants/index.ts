@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
+import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter, linkedi } from "lucide-react";
 
 export const navLinks = [
   {
@@ -350,7 +350,7 @@ export const socialLinks = [
     id: 1,
     label: "Facebook",
     icon: Facebook,
-    url: "#",
+    url: "https://www.facebook.com/profile.php?id=61561248181175",
   },
   {
     id: 2,
@@ -369,17 +369,17 @@ export const contactDetails = [
   {
     id: 1,
     icon: Phone,
-    text: "+92 333 1234567",
+    text: "+252 61 12428",
   },
   {
     id: 2,
     icon: Mail,
-    text: "waseemaofficial@gmail.com",
+    text: "abubakrwindowz@gmail.com",
   },
   {
     id: 3,
     icon: MapPin,
-    text: "Lahore, Pakistan",
+    text: "mogadishu, Hodan",
   },
 ];
 export const timeline = [
@@ -411,5 +411,4 @@ export const timeline = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   },
-  
 ];

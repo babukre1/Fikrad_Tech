@@ -385,30 +385,22 @@ export const contactDetails = [
 export const timeline = [
   {
     id: 1,
-    title: "Senior Web Developer",
-    duration: "2018 - Present",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+    title: "Junior Web Developer",
+    duration: "2021 - 2022",
+    description: "started my web development career in 2021 with HTML, CSS, JS",
   },
   {
     id: 2,
-    title: "Web Developer",
-    duration: "2015 - 2018",
+    title: "Senior Web Developer",
+    duration: "2023 - Present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Leading the development and implementation of advanced web solutions using modern technologies",
   },
   {
     id: 3,
-    title: "Junior Web Developer",
-    duration: "2013 - 2015",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  },
-  {
-    id: 4,
     title: "Degree in Computer Science",
-    duration: "2010 - 2013",
+    duration: "2022 -  Expected 2025",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Learning important technical skills and problem-solving through challenging classes and projects.",
   },
 ];

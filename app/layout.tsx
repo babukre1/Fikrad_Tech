@@ -25,6 +25,10 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9035225907331043"
           crossOrigin="anonymous"
         ></script>
+        <meta
+          name="google-site-verification"
+          content="sGKlcEYW_B2Q_UTNYZ_uA0Bkn9E7-8zUOex6GqrARnQ"
+        />
       </head>
       <body className={`bg-peach-600 ${manrope.className}`}>
         <NextTopLoader color="#5700FF" showSpinner={false} />

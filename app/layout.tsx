@@ -19,6 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9035225907331043"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className={`bg-peach-600 ${manrope.className}`}>
         <NextTopLoader color="#5700FF" showSpinner={false} />
         <AOSInit />
